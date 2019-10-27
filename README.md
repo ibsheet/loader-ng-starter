@@ -2,13 +2,15 @@
 
 [`@ibsheet/loader`](https://github.com/ibsheet/loader) starter for angular
 
-## setup
+### setup
 
 ```bash
+git clone https://github.com/ibsheet/loader-ng-starter ibl-ng-starter
+cd ibl-ng-starter
 yarn
 ```
 
-## start
+### start
 
 ```
 yarn start
