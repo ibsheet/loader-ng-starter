@@ -1,4 +1,4 @@
-# loader-ng-starter
+# ibsheet-loader-ng-starter
 
 [`@ibsheet/loader`](https://github.com/ibsheet/loader) starter for angular
 
