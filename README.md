@@ -2,23 +2,27 @@
 
 [`@ibsheet/loader`](https://github.com/ibsheet/loader) starter for angular
 
-## clone project
+## Clone Project
 
 ```bash
 git clone https://github.com/ibsheet/loader-ng-starter ibl-ng-starter
 cd ibl-ng-starter
 ```
 
-## setup and start
+## Copy IBSheet Library
 
-#### Using npm:
+copy to: `src/shared/assets/ibsheet`
+
+## Start
+
+### Using npm:
 
 ```
 npm install
 npm start
 ```
 
-#### Using yarn:
+### Using yarn:
 
 ```
 yarn
