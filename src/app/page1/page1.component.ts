@@ -8,8 +8,9 @@ import { SheetSampleData } from '../shared/ibsheet-data';
   styleUrls: ['./page1.component.css']
 })
 export class Page1Component implements OnInit, OnDestroy {
-  sheetId = 'sheet';
+  sheetId = '';
   ngOnInit() {
+    const A = this;
     const { options, data } = SheetSampleData[0];
     loader.createSheet({
       id: this.sheetId,
@@ -17,6 +18,7 @@ export class Page1Component implements OnInit, OnDestroy {
       options,
       data
     }).then((sheet: { id: any; }) => {
+      A.sheetId = sheet.id;
       // 주의: 해당 구간에서 데이터 조회를 하면 안됩니다. 데이터 조회는 onRenderFirstFinish 이벤트에서 실행해야합니다.
       console.log('created sheet', sheet.id);
     });
