@@ -5,7 +5,6 @@ const ibsheetLib = {
   name: 'ibsheet',
   baseUrl: 'assets/ibsheet'
 }
-
 loader.config({
   registry: [ibsheetLib]
 })

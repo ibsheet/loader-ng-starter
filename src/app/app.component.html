@@ -1,11 +1,15 @@
-<p>@ibsheet/loader v{{ loaderVersion }}</p>
-<h2>Go to Pages: </h2>
-<ul>
-  <li><a routerLink="/" routerLinkActive="active">Home</a></li>
-  <li><a routerLink="/page1" routerLinkActive="active">Page1</a></li>
-  <li><a routerLink="/page2" routerLinkActive="active">Page2</a></li>
-</ul>
-<div class="main">
-  <router-outlet></router-outlet>
-  <!-- Routed components go here -->
+<div class="App">
+  <p>@ibsheet/loader v{{ loaderVersion }}</p>
+  <h2>Go to Pages: </h2>
+  <div class="top-nav">
+    <ul>
+      <li><a routerLink="/" routerLinkActive="active">Home</a></li>
+      <li><a routerLink="/page1" routerLinkActive="active">Page1</a></li>
+      <li><a routerLink="/page2" routerLinkActive="active">Page2</a></li>
+    </ul>
+  </div>
+  <div class="main">
+    <router-outlet></router-outlet>
+    <!-- Routed components go here -->
+  </div>
 </div>

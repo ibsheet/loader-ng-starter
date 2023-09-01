@@ -1,6 +1,6 @@
 import { Component, OnInit, OnDestroy } from '@angular/core'
 import loader from '@ibsheet/loader'
-import { SheetSampleData } from 'src/shared/ibsheet-data';
+import { SheetSampleData } from '../shared/ibsheet-data'
 
 @Component({
   selector: 'app-page1',
