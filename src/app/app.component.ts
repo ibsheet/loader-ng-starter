@@ -1,12 +1,14 @@
-import { Component } from '@angular/core';
-import loader from '@ibsheet/loader';
+import { Component } from '@angular/core'
+import loader from '@ibsheet/loader'
+
+const ibsheetLib = {
+  name: 'ibsheet',
+  baseUrl: 'assets/ibsheet'
+}
 
 loader.config({
-  registry: {
-    name: 'ibsheet',
-    baseUrl: '/assets/ibsheet'
-  }
-});
+  registry: [ibsheetLib]
+})
 
 @Component({
   selector: 'app-root',
@@ -14,5 +16,5 @@ loader.config({
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  loaderVersion = loader.version;
+  loaderVersion = loader.version
 }
