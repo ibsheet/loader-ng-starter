@@ -1,1 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
+.App { text-align: center }
+.App-logo { height: 40vmin }
+.home {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+.App-link { color: #09d3ac }
+.top-nav ul { padding: 0 }
+.top-nav li { display: inline-block }
+.top-nav li + li { margin-left: 1rem }
