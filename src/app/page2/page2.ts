@@ -1,19 +1,19 @@
-import { Component, OnInit, OnDestroy } from '@angular/core';
+import { Component } from '@angular/core';
 import loader from '@ibsheet/loader';
 import { SheetSampleData } from '../shared/ibsheet-data';
 
 @Component({
-  selector: 'app-page1',
-  templateUrl: './page1.component.html',
-  styleUrls: ['./page1.component.css']
+  selector: 'app-page2',
+  imports: [],
+  templateUrl: './page2.html',
+  styleUrl: './page2.css'
 })
-export class Page1Component implements OnInit, OnDestroy {
+export class Page2 {
   sheetId = '';
-  ngOnInit() {
+  ngOnInit(): void {
     const A = this;
-    const { options, data } = SheetSampleData[0];
+    const { options, data } = SheetSampleData[1];
     loader.createSheet({
-      id: this.sheetId,
       el: 'sheetContainer',
       options,
       data
@@ -23,7 +23,7 @@ export class Page1Component implements OnInit, OnDestroy {
       console.log('created sheet', sheet.id);
     });
   }
-  ngOnDestroy() {
+  ngOnDestroy(): void {
     loader.removeSheet(this.sheetId);
   }
 }
