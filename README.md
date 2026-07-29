@@ -11,7 +11,7 @@ cd ibl-ng-starter
 
 ## Copy IBSheet Library
 
-copy to: `src/shared/assets/ibsheet`
+copy to: `public/ibsheet`
 
 ## Start
 
