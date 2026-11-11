@@ -9,7 +9,7 @@ git clone https://github.com/ibsheet/loader-ng-starter ibl-ng-starter
 cd ibl-ng-starter
 ```
 
-## Copy IBSheet Library
+## Copy IB Sheet Library
 
 copy to: `public/ibsheet`
 
